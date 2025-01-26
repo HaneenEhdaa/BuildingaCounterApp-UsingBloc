@@ -19,3 +19,6 @@ Title: Create two different BLoCs
 ### Theme Toggle:
 - Light and Dark theme switcher using the **Theme Bloc**.
 - Dynamic UI updates based on the current theme.
+
+  ## Demo
+  https://github.com/user-attachments/assets/02fbd12c-c25b-417a-b0b3-2977667f261f
