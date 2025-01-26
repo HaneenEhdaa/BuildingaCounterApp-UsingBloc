@@ -13,6 +13,12 @@ ThemeData kDarkTheme = ThemeData(
   appBarTheme: AppBarTheme(
     backgroundColor: kLight, 
     elevation: 2, 
-  )
-
+  ),
+elevatedButtonTheme: ElevatedButtonThemeData(
+    style: ElevatedButton.styleFrom(
+      backgroundColor: kGrey,
+      elevation: 1,
+      side: BorderSide(color: kGrey, width: 0.5),
+    ),
+  ),
 );

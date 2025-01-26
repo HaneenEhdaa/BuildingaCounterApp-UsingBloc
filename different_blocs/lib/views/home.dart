@@ -1,3 +1,4 @@
+import 'package:different_blocs/Blocs/counter_bloc/bloc/counter_bloc.dart';
 import 'package:different_blocs/Blocs/theme_bloc/bloc/theme_bloc.dart';
 import 'package:different_blocs/core/colors/colors.dart';
 import 'package:different_blocs/views/consumer_view.dart';
@@ -45,12 +46,14 @@ class _HomeState extends State<Home> {
                   Navigator.push(
                       context,
                       MaterialPageRoute(
-                          builder: (context) => const CounterPage()));
+                          builder: (context) => BlocProvider(
+                              create: (context) => CounterBloc(),
+                              child: const CounterPage())));
                 },
                 child: Text(
                   "Listner & Builder",
                   style: TextStyle(
-                      color: isDarkMode ? kGrey : kMainColor,
+                      color: isDarkMode ? kDarkBody : kMainColor,
                       fontSize: 20,
                       fontWeight: FontWeight.bold),
                 )),
@@ -60,12 +63,14 @@ class _HomeState extends State<Home> {
                   Navigator.push(
                       context,
                       MaterialPageRoute(
-                          builder: (context) => const ConsumerView()));
+                          builder: (context) => BlocProvider(
+                              create: (context) => CounterBloc(),
+                              child: const ConsumerView())));
                 },
                 child: Text(
                   "Consumer",
                   style: TextStyle(
-                      color: isDarkMode ? kGrey : kMainColor,
+                      color: isDarkMode ? kDarkBody : kMainColor,
                       fontSize: 20,
                       fontWeight: FontWeight.bold),
                 )),

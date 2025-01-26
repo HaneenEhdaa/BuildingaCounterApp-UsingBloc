@@ -10,9 +10,15 @@ ThemeData klightTheme = ThemeData(
     bodyMedium: TextStyle(color: const Color.fromARGB(255, 0, 0, 0)),
   ),
   iconTheme: IconThemeData(color: kWhite, size: 24),
-
   appBarTheme: AppBarTheme(
-    backgroundColor: kMainColor, 
-    elevation: 2, 
-  )
+    backgroundColor: kMainColor,
+    elevation: 2,
+  ),
+  elevatedButtonTheme: ElevatedButtonThemeData(
+    style: ElevatedButton.styleFrom(
+      backgroundColor: kGrey,
+      elevation: 1,
+      side: BorderSide(color: kGrey, width: 0.5),
+    ),
+  ),
 );

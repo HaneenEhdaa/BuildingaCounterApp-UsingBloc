@@ -1,16 +1,21 @@
-# different_blocs
 
-A new Flutter project.
+# Counter App with Flutter Bloc
 
-## Getting Started
+This project demonstrates the usage of the **Flutter Bloc** architecture to manage state in a Flutter application. It includes examples of `BlocBuilder`, `BlocListener`, and `BlocConsumer` with a **Counter App** and a **Theme Toggle** feature.
 
-This project is a starting point for a Flutter application.
+## Problem Statement:
+Title: Create two different BLoCs
+- A CounterBloc to handle integer value
+- A ThemeBloc to toggle between light and dark themes.
 
-A few resources to get you started if this is your first Flutter project:
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## Project Features
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+### Counter App:
+- **Increment and Decrement Buttons** to manage the counter.
+- **State Management** with `BlocBuilder`, `BlocConsumer`, and `BlocListener`.
+- Displays a notification SnackBar when the counter reaches certain values (e.g., 3, -10 or 10).
+
+### Theme Toggle:
+- Light and Dark theme switcher using the **Theme Bloc**.
+- Dynamic UI updates based on the current theme.
